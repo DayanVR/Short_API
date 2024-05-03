@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  font-size: 18px;
+}
+
+.App {
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+p {
+  text-align: center;
+  color: hsl(257, 7%, 63%);
+  margin: 2vh 0 4vh;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1024px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+button {
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 0.75rem 2rem;
+  text-align: center;
+  border-radius: 1000px;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+}
+@media (min-width: 768px) {
+  button {
+    font-size: 1.6rem;
+  }
+}
+
+button:hover {
+  background-color: hsl(180, 66%, 70%);
+}
+
+.buttonClicked:hover {
+  background-color: hsl(257, 27%, 26%);
+}
+
+.buttonClicked {
+  background-color: hsl(257, 27%, 26%);
+}
+
+/* Header.js styles */
+
+.nav-active {
+  left: 50%;
+  color: white;
+  font-weight: 700;
+  transform: translate(-50%);
+  position: absolute;
+  z-index: 10;
+  background-color: hsl(257, 27%, 26%);
+}
+
+.nav-active > ul:first-child {
+  border-bottom: 1px solid hsl(257, 7%, 63%);
+  width: 75%;
+}
+
+.nav-menu > ul > li > a:hover {
+  color: hsl(180, 66%, 49%);
+}
+
+/* Main.js styles */
+
+.back {
+  position: relative;
+  width: 100vw;
+  padding-bottom: 1vh;
+}
+
+.main-content {
+  text-align: -webkit-center;
+}
+
+.info-1 {
+  margin: 6vh 0;
+}
+
+.info-1 h1 {
+  font-weight: 700;
+  line-height: 115%;
+}
+
+.info-1 p {
+  text-align: center;
+}
+
+.section-2 {
+  margin: 4vh 0 1vh;
+  padding: 5vh 0 0;
+}
+
+.info-2 form {
+  background-size: auto;
+  background-image: url("../img/bg-shorten-mobile.svg");
+  background-color: hsl(257, 27%, 26%);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  padding: 15px 0;
+}
+@media (min-width: 1280px) {
+  .info-2 form {
+    background-image: url("../img/bg-shorten-desktop.svg");
+  }
+}
+
+.info-2 form > input:placeholder-shown {
+  border: solid hsl(0, 87%, 67%);
+}
+
+.info-2 form > span {
+  color: hsl(0, 87%, 67%);
+  font-weight: 500;
+  content: "";
+}
+
+.shortLinks {
+  text-align: center;
+  padding: 4vh 0;
+}
+
+.shortLinks p {
+  margin: 3vh 0 1vh;
+}
+
+.info-3 {
+  text-align: center;
+  padding: 1vh 0;
+}
+
+.info-3 h2 {
+  font-weight: 700;
+}
+
+.section-3 {
+  text-align: -webkit-center;
+}
+
+.section-3 span {
+  background-color: hsl(180, 66%, 49%);
+  height: 80vh;
+  position: absolute;
+  width: 10px;
+  bottom: 10%;
+  translate: -50% -15%;
+  z-index: 0;
+}
+
+.infoIcons {
+  text-align: -webkit-center;
+}
+
+.iconsBack img {
+  position: absolute;
+  z-index: 10;
+  inset: 50%;
+  translate: -50% -50%;
+}
+
+.iconsBack {
+  border-radius: 100%;
+  background-color: hsl(257, 27%, 26%);
+}
+
+.infoIcons h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.infoIcons p {
+  font-weight: 500;
+}
+
+/* Footer.js styles */
+.footer-section {
+  background-image: url("../img/bg-boost-mobile.svg");
+  text-align: center;
+  background-color: hsl(257, 27%, 26%);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+}
+@media (min-width: 1024px) {
+  .footer-section {
+    background-image: url("../img/bg-boost-desktop.svg");
+  }
+}
+
+.footer-section div > * {
+  margin: 15px 0;
+  font-weight: 700;
+  color: white;
+}
+
+footer {
+  background-color: hsl(260, 8%, 14%);
+  color: white;
+}
+
+.footer-logo > img {
+  min-width: 200px;
+}
+
+.footer-links div > h3 {
+  font-weight: 700;
+}
+
+.footer-links div > ul > li {
+  margin: 10px 0;
+}
+
+.footer-links div > ul > li > a {
+  color: hsl(0, 0%, 75%);
+  width: max-content;
+}
+.footer-links div > ul > li > a:hover {
+  color: hsl(180, 66%, 49%);
+}
+
+.footer-social img {
+  width: 2rem;
+  cursor: pointer;
+}

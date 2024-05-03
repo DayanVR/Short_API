@@ -101,7 +101,7 @@ export default function Main({
           <section className="section-2 2xl:w-9/12 self-center">
             <div className="info-2">
               <form
-                className="flex flex-col lg:flex-row justify-between rounded-xl max-md:space-y-3 max-lg:md:space-y-5 lg:h-[22vh] xl:h-36 xl:bg-cover"
+                className="flex flex-col lg:flex-row justify-between rounded-xl max-md:space-y-3 max-lg:md:space-y-5 lg:h-32 xl:h-36 xl:bg-cover"
                 onSubmit={handleSubmit}
               >
                 <input
@@ -123,7 +123,7 @@ export default function Main({
                 )}
                 <button
                   type="submit"
-                  className="mx-auto md:text-[1.3rem] max-lg:mb-4 px-8 font-bold rounded-md h-fit self-center py-3 md:py-4 w-10/12 lg:w-[28%] xl:w-[30%] 2xl:w-[20%] text-[1.2rem] xl:text-[1.5rem] leading-none"
+                  className="mx-auto md:text-[1.3rem] max-lg:mb-4 px-8 font-bold rounded-md h-fit self-center py-3 md:py-4 w-10/12 lg:w-[28%] xl:w-[30%] 2xl:w-[22%] text-[1.2rem] xl:text-[1.5rem] leading-none"
                 >
                   Shorten It!
                 </button>
@@ -175,10 +175,10 @@ export default function Main({
                 advanced statistics dashboard.
               </p>
             </div>
-            <span className="2xl:rotate-90 2xl:translate-y-[45%]"></span>
+            <span className="2xl:rotate-90 2xl:translate-y-[45%] md:translate-y-[20%]"></span>
             <div className="desktop-view 2xl:flex 2xl:w-full justify-around">
               <div className="infoIcons 2xl:text-left relative lg:w-9/12 2xl:w-[31%] px-[3vh] lg:px-2 xl:px-10 2xl:px-6 py-[5vh] md:py-[4vh] 2xl:py-[3vh] rounded-xl my-[10vh] bg-white">
-                <div className="iconsBack absolute p-10 w-fit h-fit inset-2/4 -translate-x-2/4 2xl:inset-x-20 2xl:-translate-x-2/4 -translate-y-[237%] md:-translate-y-[207%] lg:-translate-y-[195%] xl:-translate-y-[187%] 2xl:-translate-y-[205%]">
+                <div className="iconsBack absolute p-10 w-fit h-fit inset-2/4 -translate-x-2/4 2xl:inset-x-20 2xl:-translate-x-2/4 -translate-y-[310%] sm:-translate-y-56 md:-translate-y-[207%] lg:-translate-y-[210%] xl:-translate-y-[200%] 2xl:-translate-y-[215%]">
                   <img src={iconBrand} alt="" />
                 </div>
                 <h3 className="md:pt-4 pt-[4vh] pb-[3vh] md:pb-3 lg:pt-6 lg:pb-5 bg-none">
@@ -191,7 +191,7 @@ export default function Main({
                 </p>
               </div>
               <div className="infoIcons 2xl:translate-y-12 2xl:text-left relative lg:w-9/12 2xl:w-[31%] px-[3vh] lg:px-2 xl:px-10 2xl:px-6 py-[5vh] md:py-[4vh] 2xl:py-[3vh] rounded-xl my-[10vh] bg-white">
-                <div className="iconsBack absolute p-10 w-fit h-fit inset-2/4 -translate-x-2/4 2xl:inset-x-20 2xl:-translate-x-2/4 -translate-y-[237%] md:-translate-y-[207%] lg:-translate-y-[195%] xl:-translate-y-[187%] 2xl:-translate-y-[205%]">
+                <div className="iconsBack absolute p-10 w-fit h-fit inset-2/4 -translate-x-2/4 2xl:inset-x-20 2xl:-translate-x-2/4 -translate-y-[310%] sm:-translate-y-56 md:-translate-y-[207%] lg:-translate-y-[210%] xl:-translate-y-[200%] 2xl:-translate-y-[215%]">
                   <img src={iconRecords} alt="" />
                 </div>
                 <h3 className="md:pt-4 pt-[4vh] pb-[3vh] md:pb-3 lg:pt-6 lg:pb-5 bg-none">
@@ -204,7 +204,7 @@ export default function Main({
                 </p>
               </div>
               <div className="infoIcons 2xl:translate-y-24 2xl:text-left relative lg:w-9/12 2xl:w-[31%] px-[3vh] lg:px-2 xl:px-10 2xl:px-6 py-[5vh] md:py-[4vh] 2xl:py-[3vh] rounded-xl my-[10vh] bg-white">
-                <div className="iconsBack absolute p-10 w-fit h-fit inset-2/4 -translate-x-2/4 2xl:inset-x-20 2xl:-translate-x-2/4 -translate-y-[237%] md:-translate-y-[207%] lg:-translate-y-[195%] xl:-translate-y-[187%] 2xl:-translate-y-[205%]">
+                <div className="iconsBack absolute p-10 w-fit h-fit inset-2/4 -translate-x-2/4 2xl:inset-x-20 2xl:-translate-x-2/4 -translate-y-[310%] sm:-translate-y-56 md:-translate-y-[207%] lg:-translate-y-[210%] xl:-translate-y-[200%] 2xl:-translate-y-[215%]">
                   <img src={iconFullCustom} alt="" />
                 </div>
                 <h3 className="md:pt-4 pt-[4vh] pb-[3vh] md:pb-3 lg:pt-6 lg:pb-5 bg-none">

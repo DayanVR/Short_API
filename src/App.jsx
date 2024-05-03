@@ -41,7 +41,7 @@ function App() {
     } else {
       setErrorMessage("");
       fetch(
-        `https://api.tinyurl.com/create?url=${e}&api_token=${process.env.REACT_APP_API_TOKEN}`,
+        `https://api.tinyurl.com/create?url=${e}&api_token=${import.meta.VITE_APP_API_TOKEN}`,
         {
           method: "POST",
         }
